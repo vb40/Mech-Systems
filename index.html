@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MechSystems | Smart Kitchen Automation & Web Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-gray-800">MechSystems</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="/services-kitchen.html" class="hover:text-gray-600">Kitchen Automation</a>
+                <a href="/services-web.html" class="hover:text-gray-600">Web Design</a>
+                <a href="/about.html" class="hover:text-gray-600">About Us</a>
+                <a href="/contact.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen">
+        <div class="absolute inset-0 bg-black hero-overlay"></div>
+        <img src="https://images.pexels.com/photos/3160581/pexels-photo-3160581.jpeg" 
+             alt="Modern Kitchen" 
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 flex items-center px-6">
+            <div class="max-w-xl text-white">
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Smart Kitchens, Smarter Living</h1>
+                <p class="mt-4 text-lg md:text-xl">Expert automation solutions combined with cutting-edge web design services</p>
+                <div class="mt-8 flex space-x-4">
+                    <a href="/services-kitchen.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Kitchen Services</a>
+                    <a href="/services-web.html" class="bg-white text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-100 transition">Web Design</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Comprehensive Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-robot text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Smart Kitchen Design</h3>
+                    <p class="text-gray-600">Complete automation solutions for modern kitchens with IoT integration.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-laptop-code text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Web Design & Development</h3>
+                    <p class="text-gray-600">Beautiful, functional websites that showcase your business effectively.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-tools text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Integration Services</h3>
+                    <p class="text-gray-600">Seamless connection between your kitchen tech and digital presence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Kitchen and Online Presence?</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                Our team of experts will guide you through every step of the process.
+            </p>
+            <a href="/contact.html" class="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-blue-700 transition">
+                Get Started Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">MechSystems</h3>
+                    <p>Specialized kitchen automation solutions and services.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/services-kitchen.html" class="hover:text-blue-400 transition">Kitchen Automation</a></li>
+                        <li><a href="/services-web.html" class="hover:text-blue-400 transition">Web Design</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/about.html" class="hover:text-blue-400 transition">About Us</a></li>
+                        <li><a href="/contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 KitchenCraft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
