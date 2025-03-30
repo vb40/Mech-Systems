@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Automation Services | KitchenCraft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-gray-800">Mech Systems</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="/services-kitchen.html" class="text-blue-600 font-medium">Kitchen Automation</a>
+                <a href="/services-web.html" class="hover:text-gray-600">Web Design</a>
+                <a href="/about.html" class="hover:text-gray-600">About Us</a>
+                <a href="/contact.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-32 bg-gray-900">
+        <div class="container mx-auto px-6 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Kitchen Automation Solutions</h1>
+            <p class="text-xl max-w-2xl mx-auto">Transform your kitchen into a smart, efficient space with our cutting-edge automation services</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Kitchen Automation Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <img src="https://images.pexels.com/photos/3761509/pexels-photo-3761509.jpeg" alt="Smart Appliances" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-blue-600 mb-3">
+                            <i class="fas fa-blender text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Smart Appliance Integration</h3>
+                        <p class="text-gray-600 mb-4">Connect and control all your kitchen appliances from a single interface.</p>
+                        <ul class="space-y-2 text-gray-600 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Voice control compatibility</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Energy usage monitoring</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Remote operation</span>
+                            </li>
+                        </ul>
+                        <a href="/contact.html" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <img src="https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg" alt="Lighting Control" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-blue-600 mb-3">
+                            <i class="fas fa-lightbulb text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Smart Lighting Systems</h3>
+                        <p class="text-gray-600 mb-4">Automated lighting that adapts to your cooking needs and mood.</p>
+                        <ul class="space-y-2 text-gray-600 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Motion-activated under-cabinet lights</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Color temperature adjustment</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Voice and app control</span>
+                            </li>
+                        </ul>
+                        <a href="/contact.html" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <img src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg" alt="Inventory System" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-blue-600 mb-3">
+                            <i class="fas fa-clipboard-list text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Smart Inventory System</h3>
+                        <p class="text-gray-600 mb-4">Never run out of ingredients with our automated tracking system.</p>
+                        <ul class="space-y-2 text-gray-600 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>RFID-enabled pantry tracking</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Automatic shopping lists</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Expiration date alerts</span>
+                            </li>
+                        </ul>
+                        <a href="/contact.html" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Automate Your Kitchen?</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                Our experts will design a custom solution tailored to your cooking style and space.
+            </p>
+            <a href="/contact.html" class="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-blue-700 transition">
+                Schedule a Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Mech Systems</h3>
+                    <p>Specialized kitchen automation solutions and services.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/services-kitchen.html" class="hover:text-blue-400 transition">Kitchen Automation</a></li>
+                        <li><a href="/services-web.html" class="hover:text-blue-400 transition">Web Design</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/about.html" class="hover:text-blue-400 transition">About Us</a></li>
+                        <li><a href="/contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 KitchenCraft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
