@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | KitchenCraft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .form-input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-gray-800">Mech Systems</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="/services-kitchen.html" class="hover:text-gray-600">Kitchen Automation</a>
+                <a href="/services-web.html" class="hover:text-gray-600">Web Design</a>
+                <a href="/about.html" class="hover:text-gray-600">About Us</a>
+                <a href="/contact.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-32 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h1>
+            <p class="text-xl max-w-2xl mx-auto">We'd love to hear about your project and how we can help</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <div class="md:flex">
+                        <!-- Form Column -->
+                        <div class="w-full md:w-1/2 p-8">
+                            <h2 class="text-2xl font-bold mb-6">Send Us a Message</h2>
+                            <form>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 mb-2" for="name">Name</label>
+                                    <input type="text" id="name" class="form-input w-full px-4 py-2 border rounded focus:outline-none focus:border-blue-500">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 mb-2" for="email">Email</label>
+                                    <input type="email" id="email" class="form-input w-full px-4 py-2 border rounded focus:outline-none focus:border-blue-500">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 mb-2" for="service">Service Interested In</label>
+                                    <select id="service" class="form-input w-full px-4 py-2 border rounded focus:outline-none focus:border-blue-500">
+                                        <option value="">Select a service</option>
+                                        <option value="kitchen">Kitchen Automation</option>
+                                        <option value="web">Web Design</option>
+                                        <option value="both">Both Services</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 mb-2" for="message">Message</label>
+                                    <textarea id="message" rows="4" class="form-input w-full px-4 py-2 border rounded focus:outline-none focus:border-blue-500"></textarea>
+                                </div>
+                                <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition w-full">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <!-- Info Column -->
+                        <div class="w-full md:w-1/2 bg-gray-50 p-8">
+                            <h2 class="text-2xl font-bold mb-6">Contact Information</h2>
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="text-blue-600 mr-4 mt-1">
+                                        <i class="fas fa-map-marker-alt text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold">Our Office</h3>
+                                        <p class="text-gray-600">123 Tech Park Drive<br>San Francisco, CA 94107</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="text-blue-600 mr-4 mt-1">
+                                        <i class="fas fa-phone-alt text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold">Phone</h3>
+                                        <p class="text-gray-600">+91 9791903235</p>
+                                        <p class="text-gray-600 text-sm">Mon-Fri, 9am-5pm PST</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="text-blue-600 mr-4 mt-1">
+                                        <i class="fas fa-envelope text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold">Email</h3>
+                                        <p class="text-gray-600">contact@mechsystems.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <h3 class="font-semibold mb-4">Follow Us</h3>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">
+                                        <i class="fab fa-facebook-f text-xl"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">
+                                        <i class="fab fa-twitter text-xl"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">
+                                        <i class="fab fa-instagram text-xl"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">
+                                        <i class="fab fa-linkedin-in text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="rounded-lg overflow-hidden shadow-lg">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0350758090543!2d-122.396435924225!3d37.791315971955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064dca37cb5%3A0x394d27fe6a3c1f22!2sTech%20Park%20Dr%2C%20San%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1689876543210!5m2!1sen!2s" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Start Your Project?</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                Schedule a free consultation with our team to discuss your needs.
+            </p>
+            <a href="#" class="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-blue-700 transition">
+                Book a Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Mech Systems</h3>
+                    <p>Specialized kitchen automation solutions and services.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/services-kitchen.html" class="hover:text-blue-400 transition">Kitchen Automation</a></li>
+                        <li><a href="/services-web.html" class="hover:text-blue-400 transition">Web Design</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/about.html" class="hover:text-blue-400 transition">About Us</a></li>
+                        <li><a href="/contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 KitchenCraft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
