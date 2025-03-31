@@ -3,138 +3,342 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MechSystems | Smart Kitchen Automation & Web Design</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .hero-overlay {
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-    </style>
+    <title>Nostra</title>
+    <!--Link CSS File-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="/" class="text-2xl font-bold text-gray-800">MechSystems</a>
-            <div class="hidden md:flex space-x-8 items-center">
-                <a href="/services-kitchen.html" class="hover:text-gray-600">Kitchen Automation</a>
-                <a href="/services-web.html" class="hover:text-gray-600">Web Design</a>
-                <a href="/about.html" class="hover:text-gray-600">About Us</a>
-                <a href="/contact.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Contact</a>
-            </div>
-            <button class="md:hidden focus:outline-none">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
-        </div>
-    </nav>
+<body>
 
-    <!-- Hero Section -->
-    <section class="relative h-screen">
-        <div class="absolute inset-0 bg-black hero-overlay"></div>
-        <img src="https://images.pexels.com/photos/3160581/pexels-photo-3160581.jpeg" 
-             alt="Modern Kitchen" 
-             class="w-full h-full object-cover">
-        <div class="absolute inset-0 flex items-center px-6">
-            <div class="max-w-xl text-white">
-                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Smart Kitchens, Smarter Living</h1>
-                <p class="mt-4 text-lg md:text-xl">Expert automation solutions combined with cutting-edge web design services</p>
-                <div class="mt-8 flex space-x-4">
-                    <a href="/services-kitchen.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Kitchen Services</a>
-                    <a href="/services-web.html" class="bg-white text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-100 transition">Web Design</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--Offer Bar-->
 
-    <!-- Features Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Our Comprehensive Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-robot text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Smart Kitchen Design</h3>
-                    <p class="text-gray-600">Complete automation solutions for modern kitchens with IoT integration.</p>
-                </div>
-                
-                <!-- Service 2 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-laptop-code text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Web Design & Development</h3>
-                    <p class="text-gray-600">Beautiful, functional websites that showcase your business effectively.</p>
-                </div>
-                
-                <!-- Service 3 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-tools text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Integration Services</h3>
-                    <p class="text-gray-600">Seamless connection between your kitchen tech and digital presence.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="offer-bar">
+        <p>Sign Up and <b>GET 20% OFF</b> for your first Order
+        <i id="offer-close"  style="margin-left: 10%; cursor: pointer;" class="fa-solid fa-xmark"></i>
+        </p>
+    </div>
 
-    <!-- CTA Section -->
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Kitchen and Online Presence?</h2>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-                Our team of experts will guide you through every step of the process.
+    
+
+   
+
+        <!--Navigation Bar-->
+        <nav class="navbar">
+            <h1>Nostra</h1>
+            <div class="navbar-links">
+                <p class="navbar-link"><a href="home">Home</a></p>
+                <p class="navbar-link"><a href="#new-arrival">New Arrival</a></p>
+                <p class="navbar-link"><a href="#most-wanted">Most Wanted</a></p>
+                <p class="navbar-link"><a href="collections.html">Collections</a></p>
+                <p class="navbar-link"><a href="./contactus.html">Contact Us</a></p>
+            </div>
+            
+
+            <div class="navbar-menu-toggle">
+                <i id="side-navbar-activate" class="fa-solid fa-bars"></i>
+            </div>
+
+            
+
+            
+
+        </nav>
+
+        <!--Side Navbar-->
+
+        <div class="side-navbar"> 
+            <p style="text-align: right;">
+                <i id="side-navbar-close" class="fa-solid fa-xmark"></i>
             </p>
-            <a href="/contact.html" class="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-blue-700 transition">
-                Get Started Today
-            </a>
-        </div>
-    </section>
+            <div class="side-navbar-links">
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">MechSystems</h3>
-                    <p>Specialized kitchen automation solutions and services.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Services</h4>
-                    <ul class="space-y-2">
-                        <li><a href="/services-kitchen.html" class="hover:text-blue-400 transition">Kitchen Automation</a></li>
-                        <li><a href="/services-web.html" class="hover:text-blue-400 transition">Web Design</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Company</h4>
-                    <ul class="space-y-2">
-                        <li><a href="/about.html" class="hover:text-blue-400 transition">About Us</a></li>
-                        <li><a href="/contact.html" class="hover:text-blue-400 transition">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Connect</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
+                <p class="side-navbar-link"><a href="./index.html">Home</a></p>
+                <p class="side-navbar-link"><a href="#new-arrival">New Arrival</a></p>
+            <p class="side-navbar-link"><a href="#most-wanted">Most Wanted</a></p>
+            <p class="side-navbar-link"><a href="./collections.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="./contactus.html">Contact Us</a></p>
             </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2023 KitchenCraft. All rights reserved.</p>
+            
+        </div>
+
+        <div class="container">
+
+        <!--Slider-->
+        <div class="slider">
+            <div class="slider-left-button">
+                <i id="slider-left-activate" class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+            </div>
+
+            <div class="slider-content">
+                <h1>Level up your style with our</h1>
+                <h4>Summer Collections</h4> 
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+
+            <div class="slider-image-container">
+                <img class="slider-image" src="img/others/slider-one.jpg"  width="100%" alt="">
+                <img class="slider-image" src="img/others/slider-one.jpg" alt="">
+                <img class="slider-image" src="img/others/slider-one.jpg" alt="">
+            </div>
+
+            <div class="slider-right-button">
+                
+                <i id="slider-right-activate" class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
             </div>
         </div>
-    </footer>
+
+        <!--Brands-->
+
+        
+        <h2 style="margin-top: 5vw;">Brands</h2>
+        <div class="brands">
+            <div class="brands-item">
+                <img class="brands-icon" src="img/icons/behance.png" alt="">
+                <p>Puma</p>
+            </div>
+
+            <div class="brands-item">
+                <img class="brands-icon" src="img/icons/adidas.png" alt="">
+                <p>Adidas</p>
+            </div>
+
+            <div class="brands-item">
+                <img class="brands-icon" src="img/icons/simple.png" alt="">
+                <p>Simple</p>
+            </div>
+
+            <div class="brands-item">
+                <img class="brands-icon" src="img/icons/leaves.png" alt="">
+                <p>Leaves</p>
+            </div>
+
+            <div class="brands-item">
+                <img class="brands-icon" src="img/icons/behance.png" alt="">
+                <p>Behance</p>
+            </div>
+
+            <div class="brands-item">
+                <img class="brands-icon" src="img/icons/twitch.png" alt="">
+                <p>Twitch</p>
+            </div>
+
+            <div class="brands-item">
+                <img class="brands-icon" src="img/icons/leaves.png" alt="">
+                <p>Leaves</p>
+            </div>
+        </div>
+
+    
+        <div class="initial-scroll-animate reveal-scroll-animate">
+        <div class="service">
+            
+            <div class="servives-container-1">
+                <div>
+                    <h2>We Provide Best</h2>
+                    <h2>Customer Experiences</h2>
+                </div>
+
+                <div>
+                    <p>|| We ensure that our customer have the best shopping experience</p>
+                </div>
+            </div>
+
+            <div class="servives-container-2">
+                <div>
+                    <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-circle-check"></i>
+                    <h4>Original Products</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+                    </p>
+                </div>
+
+                <div>
+                    <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-face-smile"></i>
+                    <h4>Satisfaction Guarantee</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+                    </p>
+                </div>
+
+                <div>
+                    <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-broom"></i>
+                    <h4>New Arrival Everyday</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+                    </p>
+                </div>
+
+                <div>
+                    <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-truck-fast"></i>
+                    <h4>Fast & Free Shipping</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="initial-scroll-animate reveal-scroll-animate">
+        <h2 id="new-arrival" style=" margin-top: 5vw;">New Arrivals</h2>
+
+        <div  class="new-arrival" >
+            
+            <div class="new-arrival-container">
+                <img style="width: 20vw;" src="img/products/f1.jpg" alt="">
+                <div class="overlay"></div>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+
+            </div>
+
+            <div class="new-arrival-container">
+                <img style="width: 20vw;" src="img/products/f7.jpg" alt="">
+                <div class="overlay"></div>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+
+            </div>
+
+            <div class="new-arrival-container">
+                <img style="width: 20vw;" src="img/products/n1.jpg" alt="">
+                <div class="overlay"></div>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+
+            </div>
+
+            <div class="new-arrival-container">
+                <img style="width: 20vw;" src="img/products/n7.jpg" alt="">
+                <div class="overlay"></div>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="initial-scroll-animate reveal-scroll-animate">
+        <h2 id="most-wanted" style=" margin-top: 5vw;">Most Wanted</h2>
+
+        <div  class="most-wanted">
+
+            <div class="most-wanted-container">
+                <img style="width: 20vw;" src="img/products/n8.jpg" alt="">
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="img/icons/blackheart.png" alt="">
+
+            </div>
+
+            <div class="most-wanted-container">
+                <img style="width: 20vw;" src="img/products/f1.jpg" alt="">
+                
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="img/icons/blackheart.png" alt="">
+            </div>
+
+            <div class="most-wanted-container">
+                <img style="width: 20vw;" src="img/products/n1.jpg" alt="">
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="img/icons/blackheart.png" alt="">
+                
+
+            </div>
+
+            <div class="most-wanted-container">
+                <img style="width: 20vw;" src="img/products/n7.jpg" alt="">
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="img/icons/blackheart.png" alt="">
+                
+
+            </div>
+            
+            <div class="most-wanted-container">
+                <img style="width: 20vw;" src="img/products/n3.jpg" alt="">
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="img/icons/blackheart.png" alt="">
+
+            </div>
+
+            <div class="most-wanted-container">
+                <img style="width: 20vw;" src="img/products/f7.jpg" alt="">
+                
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="img/icons/blackheart.png" alt="">
+            </div>
+
+            <div class="most-wanted-container">
+                <img style="width: 20vw;" src="img/products/n4.jpg" alt="">
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="img/icons/blackheart.png" alt="">
+                
+
+            </div>
+
+            <div class="most-wanted-container">
+                <img style="width: 20vw;" src="img/products/n7.jpg" alt="">
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="img/icons/blackheart.png" alt="">
+                
+
+            </div>
+        </div>
+    </div>
+
+    <div class="initial-scroll-animate reveal-scroll-animate">
+
+    
+
+        <div class="limited-offer">
+            <div class="limited-offer-img">
+                <img src="img/others/offer.jpg" alt="">
+            </div>
+            <div class="limited-offer-text">
+                <h2>Limited Offer</h2>
+                <h4>35% OFF on this for the first 30 Customers</h4>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <div class="news">
+        <h2>Join our News Letter</h2>
+        <p style="text-align: center;">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <div style="margin-top: 10px;">
+        <input class="search">
+    </div>
+    <div>
+        <button> Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+    </div>
+    </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingText">Nostra</h2>
+                <p>The Standard chunk of Lorem ipsum
+                    used since the 1500s is reprodused
+                    below for those interest</p>
+                <div class="footer-icon-container">
+                    <i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        <p class="subtitle">@ 2023 Nostra.com</p>
+    </div>
+
+   
+    
+    <!--Link Javascript File-->
+    <script src="script.js"></script>
 </body>
 </html>
